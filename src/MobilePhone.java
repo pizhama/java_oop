@@ -2,7 +2,7 @@
 public class MobilePhone {
     private String brand;
     private String model;
-    private int yearReleased;
+    private Integer yearReleased;
 
     public MobilePhone(String brand, String model, int yearReleased) {
         this.brand = brand;
@@ -33,7 +33,7 @@ public class MobilePhone {
         this.model = model;
     }
 
-    public int getYearReleased() {
+    public Integer getYearReleased() {
         return yearReleased;
     }
 

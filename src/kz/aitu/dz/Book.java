@@ -3,7 +3,7 @@ package kz.aitu.dz;
 public class Book {
     private String title;
     private String author;
-    private int pages;
+    private Integer pages;
 
     public Book(String title, String author, int pages) {
         this.title = title;
@@ -19,23 +19,35 @@ public class Book {
     }
 
     public String getTitle() {
+        System.out.println("Getter for title was called");
         return title;
     }
     public void setTitle(String title) {
+        if (title == null) {
+            throw new IllegalArgumentException();
+        }
+
         this.title = title;
     }
 
     public String getAuthor() {
+        System.out.println("Getter for author was called");
         return author;
     }
     public void setAuthor(String author) {
+        if (author == null) {
+            throw new IllegalArgumentException();
+        }
+
         this.author = author;
     }
 
     public int getPages() {
+        System.out.println("Getter for pages was called");
         return pages;
     }
-    public void setPages(int pages) {
+    public void setPages(Integer pages) {
+
         this.pages = pages;
     }
 }
