@@ -12,7 +12,8 @@ public class Main {
         Cat Barsik = new Cat("Barsik", 11, "Black");
         Cat Snow = new Cat("Snow", 9, "White");
 
-        Barsik.meow("Jack", "John");
+        Barsik.meow("Jack");
+        Snow.meow("Jack", "John");
 
         MobilePhone Nokia = new MobilePhone("Nokia", "3310", 2017);
         MobilePhone Motorola = new MobilePhone("Motorola", "MOTOACTV W450", 2008);
